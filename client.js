@@ -14,7 +14,21 @@ const connect = function() {
 	conn.on("connect", () => {
 		console.log("connected to the server");
 		conn.write("Name: AS");
+
+		// setTimeout(() => {
+		// 	conn.write("Move: up");
+		// }, 3000)
+		
+		// setTimeout(() => {
+		// 	conn.write("Move: down");
+		// }, 3000)
+
+		// setInterval(() => {
+		// 	//conn.write("Move: up");
+		// 	conn.write("Move: down");
+		// }, 3000);
 	})
+
 
 	//if idling, return a msg from the server to the client
 	conn.on('data', (data) => {
