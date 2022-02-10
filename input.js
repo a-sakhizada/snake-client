@@ -43,6 +43,7 @@ const handleUserInput = function() {
 
             default: 
                 console.log("not one of the W-A-S-D keys. Try again!");
+            break;
         }       
     })
 }
