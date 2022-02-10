@@ -27,7 +27,6 @@ const connect = function() {
 		// 	//conn.write("Move: up");
 		// 	conn.write("Move: down");
 		// }, 3000);
-
 		
 	})
 
@@ -36,6 +35,8 @@ const connect = function() {
 	conn.on('data', (data) => {
 		console.log(data);
 	})
+
+	return conn;
 }
 
-module.exports = connect;
+module.exports = {connect};
