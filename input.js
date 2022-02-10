@@ -32,6 +32,15 @@ const handleUserInput = function() {
                 connection.write("Move: right");
             break;
 
+            //send fun messages !
+            case "r":
+                connection.write("Say: YO!");
+            break;
+
+            case "t":
+                connection.write("Say: wow");
+            break;
+
             default: 
                 console.log("not one of the W-A-S-D keys. Try again!");
         }       
